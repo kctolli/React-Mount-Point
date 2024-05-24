@@ -1,0 +1,31 @@
+{
+  "name": "@kctolli/react-mount-point",
+  "version": "1.0.0",
+  "description": "Mount Point for React app",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kctolli/React-Mount-Point.git"
+  },
+  "keywords": [
+    "React",
+    "App",
+    "Mount"
+  ],
+  "author": "kctolli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kctolli/React-Mount-Point/issues"
+  },
+  "homepage": "https://github.com/kctolli/React-Mount-Point#readme",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
