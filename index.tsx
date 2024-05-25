@@ -14,6 +14,16 @@ export const Loading = memo(
     )
 );
 
+export const Loading2 = Loading;
+
+export const Loading3 = memo(
+    ({children}: {children: ReactNode}): ReactNode => (
+        <Suspense fallback={<h3>Loading...</h3>}>
+            {children}
+        </Suspense>
+    )
+);
+
 export const mount = (
     children: ReactNode, 
     id: string = "root"
