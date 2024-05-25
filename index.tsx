@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom/client';
+import {createRoot} from 'react-dom/client';
 import { 
     StrictMode, 
     ReactNode, 
@@ -16,7 +16,7 @@ export type childrenType = {
 
 export const getRoot = (id: string = "root") => {
     const container = document.getElementById(id);
-    return ReactDOM.createRoot(container!);
+    return createRoot(container!);
 }
 
 export const Loading = memo(
