@@ -1,6 +1,6 @@
 {
   "name": "@kctolli/react-mount-point",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Mount Point for React app",
   "main": "index.tsx",
   "scripts": {
