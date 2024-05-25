@@ -1,16 +1,18 @@
-import React, { StrictMode, ReactNode, memo, Suspense } from 'react';
-import { createRoot } from 'react-dom/client';
+import { StrictMode, ReactNode, memo, Suspense } from 'react';
+import ReactDOM from 'react-dom/client';
 
 export const getRoot = (id: string = "root") => {
     const container = document.getElementById(id);
-    return createRoot(container!);
+    return ReactDOM.createRoot(container!);
 }
 
-export const Loading = memo(({children}: {children: ReactNode}): ReactNode => (
-    <Suspense fallback={<h2>Loading...</h2>}>
-        {children}
-    </Suspense>
-));
+export const Loading = memo(
+    ({children}: {children: ReactNode}): ReactNode => (
+        <Suspense fallback={<h2>Loading...</h2>}>
+            {children}
+        </Suspense>
+    )
+);
 
 export const mount = (
     children: ReactNode, 
@@ -26,8 +28,6 @@ export const mount = (
 export const mountSuspense = (
     children: ReactNode, 
     id: string = "root"
-) => (
-    mount(<Loading> {children} </Loading>, id)
-);
+) => (mount(<Loading> {children} </Loading>, id));
 
 export default mount;
